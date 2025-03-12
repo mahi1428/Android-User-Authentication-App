@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/backgroundColor"
+    android:padding="20dp">
+
+    <!-- image -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/images"
+        android:contentDescription="App Logo"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GitHub"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        android:paddingBottom="20dp"/>
+
+    <!-- Signup & Login Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:textSize="16sp"
+            android:backgroundTint="@color/buttonColor"
+            android:textColor="@color/textColor"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textSize="16sp"
+            android:backgroundTint="@color/buttonColor"
+            android:textColor="@color/textColor"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <!-- Signup2 & Login2 Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnSignup2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Signup 2"
+            android:textSize="16sp"
+            android:backgroundTint="@color/buttonColor"
+            android:textColor="@color/textColor"/>
+
+        <Button
+            android:id="@+id/btnLogin2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Log in 2"
+            android:textSize="16sp"
+            android:backgroundTint="@color/buttonColor"
+            android:textColor="@color/textColor"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <!-- Updates Button -->
+    <Button
+        android:id="@+id/btnUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Updates"
+        android:textSize="16sp"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@color/textColor"/>
+</LinearLayout>
